@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 45em;
+    max-height: 90vh;
+    background: rgba(255, 255, 255, 0.409); /* Transparent white background */
+    backdrop-filter: blur(10px); /* Glass-like effect */
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 3em;
+    border-radius: 1em;
+    box-shadow: 0 4em 5em rgba(27, 8, 53, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border for glass effect */
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#wheel {
+    max-height: inherit;    
+    width: inherit;
+    border-radius: 50%;
+    background: rgba(242, 237, 237, 0.951); /* Slightly more opaque for clarity */
+    backdrop-filter: blur(0px); /* Additional blur for the wheel */
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2), /* Inner shadow for depth */
+                0 0 30px rgba(0, 0, 0, 0.2); /* Outer shadow for depth */
+    top: 0;
+    padding: 0;
+    color: black;
+    
+}
+
+#spin-btn {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    height: 26%;
+    width: 26%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 0;
+    background: linear-gradient(to right, #FF9933, #FFFFFF, #138808);
+    color: #c66e16;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    position: absolute;
+    width: 4em;
+    top: 45%;
+    right: -8%;
+}
+
+#final-value {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 1.5em;
+    color: #202020;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        font-size: 12px;
+    }
+    img {
+        right: -5%;
+    }
+}

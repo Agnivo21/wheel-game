@@ -3,13 +3,13 @@ const spinBtn = document.getElementById("spin-btn");
 const finalValue = document.getElementById("final-value");
 //Object that stores values of minimum and maximum angle for a value
 const rotationValues = [
-  { minDegree: 0, maxDegree: 30, value: "Art. 19–22" },
+  { minDegree: 0, maxDegree: 30, value: "Art. 19-22" },
   { minDegree: 31, maxDegree: 90, value: "Art. 14-18" },
-  { minDegree: 91, maxDegree: 150, value: "Art. 32–35" },
-  { minDegree: 151, maxDegree: 210, value: "Art. 29–30" },
-  { minDegree: 211, maxDegree: 270, value: "Art. 25–28" },
-  { minDegree: 271, maxDegree: 330, value: "Art. 23–24" },
-  { minDegree: 331, maxDegree: 360, value: "Art. 19–22" },
+  { minDegree: 91, maxDegree: 150, value: "Art. 32-35" },
+  { minDegree: 151, maxDegree: 210, value: "Art. 29-30" },
+  { minDegree: 211, maxDegree: 270, value: "Art. 25-28" },
+  { minDegree: 271, maxDegree: 330, value: "Art. 23-24" },
+  { minDegree: 331, maxDegree: 360, value: "Art. 19-22" },
 ];
 //Size of each piece
 const data = [25, 25, 25, 25, 25, 25];
@@ -30,7 +30,7 @@ let myChart = new Chart(wheel, {
   type: "pie",
   data: {
     //Labels(values which are to be displayed on chart)
-    labels: ["Art. 14-18", "Art. 19–22", "Art. 23–24", "Art. 25–28", "Art. 29–30", "Art. 32–35"],
+    labels: ["Art. 14-18", "Art. 19-22", "Art. 23-24", "Art. 25-28", "Art. 29-30", "Art. 32-35"],
     //Settings for dataset/pie
     datasets: [
       {
